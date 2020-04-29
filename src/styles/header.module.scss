@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.header {
+  background: $white-color;
+  padding: 1rem;
+  box-shadow: $box-shadow;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  font-size: 20px;
+  margin: 0;
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+    li {
+      margin-left:1rem;
+      .nav-item {
+        text-decoration: none;
+        font-weight: 600;
+        color: $secondary-color;
+      }
+      .nav-item:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
