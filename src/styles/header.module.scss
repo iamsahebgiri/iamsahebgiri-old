@@ -1,41 +1,76 @@
 @import "./variables.scss";
 
-.header {
-  background: $white-color;
-  padding: 1rem;
-  box-shadow: $box-shadow;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
+
+  background: $white-color;
+  padding: 0.8rem;
+  box-shadow: $box-shadow;
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
 }
 
-.site-logo {
-  font-size: 20px;
-  margin: 0;
-  color: $secondary-color;
-  text-transform: uppercase;
-}
 
-.nav-menu {
+
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $modal-background-color;
+}
+.mobile-nav-menu {
+  background: $white-color;
+  width: 70%;
+  height: 100%;
+
+  .site-logo {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+
+    .hamburger {
+      margin-right: 1rem;
+    }
+  }
+
   ul {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
+    padding: 0;
+    margin: 0;
 
     li {
-      margin-left:1rem;
-      .nav-item {
+      padding: 0 8px;
+      a {
         text-decoration: none;
-        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-radius: 3px;
+        font-weight: $semi-bold;
         color: $secondary-color;
+
+        svg {
+          margin-right: 8px;
+        }
       }
-      .nav-item:hover {
+      .menu-item-active {
+        background-color: $link-hover-color;
         color: $primary-color;
+        svg {
+          * {
+            fill: #0052CC;
+          }
+        }
+      }
+      a:hover {
+        background-color: $link-hover-color;
       }
     }
   }

@@ -1,12 +1,12 @@
 import React from "react"
 
 import Header from '../components/header'
-import layoutStyles from '../styles/layout.module.scss'
+import globalStyles from '../styles/global.module.scss'
 
 const Layout = (props) => (
   <div>
-    <Header />
-    <main className={layoutStyles.container}>
+    <Header></Header>
+    <main className={globalStyles.container}> 
       {props.children}
     </main>
   </div>

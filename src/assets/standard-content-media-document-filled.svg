@@ -1,0 +1,15 @@
+<svg id="standard_content_media_document-filled" data-name="standard/content/media/document-filled" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M12,18H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H7.275A2,2,0,0,1,8.557.464L13.631,4.7a1,1,0,0,1,.358.769v.52L14,7v9A2,2,0,0,1,12,18ZM7.019,2,7,5.177A1,1,0,0,0,8,6.183h3.994L7.019,2h0Z" transform="translate(5 3)" fill="#42526e"/>
+    </clipPath>
+  </defs>
+  <g id="Group_160" data-name="Group 160">
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M12,18H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H7.275A2,2,0,0,1,8.557.464L13.631,4.7a1,1,0,0,1,.358.769v.52L14,7v9A2,2,0,0,1,12,18ZM7.019,2,7,5.177A1,1,0,0,0,8,6.183h3.994L7.019,2h0Z" transform="translate(5 3)" fill="#42526e"/>
+    <g id="Mask_Group_160" data-name="Mask Group 160" clip-path="url(#clip-path)">
+      <g id="_Color" data-name="↳ 🎨Color">
+        <path id="N500" d="M0,24H24V0H0Z" fill="#42526e"/>
+      </g>
+    </g>
+  </g>
+</svg>

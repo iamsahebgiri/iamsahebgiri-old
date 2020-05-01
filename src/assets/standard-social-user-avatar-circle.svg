@@ -1,0 +1,15 @@
+<svg id="standard_social_user-avatar-circle" data-name="standard/social/user-avatar-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Oval_2" data-name="Oval 2" d="M9,18a9,9,0,1,1,9-9A9.01,9.01,0,0,1,9,18ZM6,11a2,2,0,0,0-2,2v.868a6.98,6.98,0,0,0,10,.046V13a2,2,0,0,0-2-2ZM9,3a3,3,0,1,0,3,3A3,3,0,0,0,9,3Z" transform="translate(3 3)" fill="#42526e"/>
+    </clipPath>
+  </defs>
+  <g id="Group_234" data-name="Group 234">
+    <path id="Oval_2-2" data-name="Oval 2" d="M9,18a9,9,0,1,1,9-9A9.01,9.01,0,0,1,9,18ZM6,11a2,2,0,0,0-2,2v.868a6.98,6.98,0,0,0,10,.046V13a2,2,0,0,0-2-2ZM9,3a3,3,0,1,0,3,3A3,3,0,0,0,9,3Z" transform="translate(3 3)" fill="#42526e"/>
+    <g id="Mask_Group_234" data-name="Mask Group 234" clip-path="url(#clip-path)">
+      <g id="_Color" data-name="↳ 🎨Color">
+        <path id="N500" d="M0,24H24V0H0Z" fill="#42526e"/>
+      </g>
+    </g>
+  </g>
+</svg>
