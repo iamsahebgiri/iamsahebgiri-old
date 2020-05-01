@@ -15,8 +15,6 @@
   }
 }
 
-
-
 .modal {
   height: 100%;
   width: 100%;
@@ -29,17 +27,19 @@
   background: $white-color;
   width: 70%;
   height: 100%;
-
+  
   .site-logo {
-    padding: 0.8rem;
     display: flex;
+    padding: 1rem;
     align-items: center;
-
-    .hamburger {
-      margin-right: 1rem;
+    svg {
+      fill: $secondary-color;
+      margin-right: 1.2rem;
+    }
+    img {
+      height: 1rem;
     }
   }
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -57,16 +57,15 @@
         color: $secondary-color;
 
         svg {
-          margin-right: 8px;
+          margin-right: 1.2rem;
+          fill: $secondary-color;
         }
       }
       .menu-item-active {
         background-color: $link-hover-color;
         color: $primary-color;
         svg {
-          * {
-            fill: #0052CC;
-          }
+          fill: #0052cc;
         }
       }
       a:hover {

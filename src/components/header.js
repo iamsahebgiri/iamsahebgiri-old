@@ -2,12 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import headerStyles from '../styles/header.module.scss'
-
 import siteLogo from '../assets/saheb-giri.svg'
-import searchIcon from '../assets/standard-action-search.svg'
-import menuIcon from '../assets/standard-navigation-menu.svg'
-
-
 class Header extends Component {
 
 
@@ -18,15 +13,14 @@ class Header extends Component {
 
           <div className={headerStyles.hamburger}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg>
-
           </div>
 
           <div>
-            <Link to="/"><img src={siteLogo} /></Link>
+            <Link to="/"><img src={siteLogo} height="24px" alt="Saheb Giri" /></Link>
           </div>
 
           <div className={headerStyles.search}>
-            <img src={searchIcon} alt="Search Icon" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
           </div>
         </div>
 
@@ -34,12 +28,18 @@ class Header extends Component {
           <nav className={headerStyles.mobileNavMenu}>
             <Link to="/" className={headerStyles.siteLogo}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg>
-
+              <img src={siteLogo} alt="saheb Giri" />
             </Link>
             <ul>
+            <li>
+                <Link to="/" activeClassName={headerStyles.menuItemActive}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.49a1 1 0 0 1 .386-.79l8-6.222a1 1 0 0 1 1.228 0l8 6.222a1 1 0 0 1 .386.79V20z"/></svg>
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link to="/projects" activeClassName={headerStyles.menuItemActive}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M17 7a8.003 8.003 0 0 0-7.493 5.19l1.874.703A6.002 6.002 0 0 1 23 15a6 6 0 0 1-6 6H7A6 6 0 0 1 5.008 9.339a7 7 0 0 1 13.757-2.143A8.027 8.027 0 0 0 17 7z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 7H4v9h16v-9zM5 6v2h2V6H5zm4 0v2h2V6H9z"/></svg>
                   Projects
                 </Link>
               </li>
@@ -50,7 +50,7 @@ class Header extends Component {
                 </Link></li>
               <li>
                 <Link to="/about" activeClassName={headerStyles.menuItemActive}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6.023 15.416C7.491 17.606 9.695 19 12.16 19c2.464 0 4.669-1.393 6.136-3.584A8.968 8.968 0 0 0 12.16 13a8.968 8.968 0 0 0-6.137 2.416zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
                 About
                 </Link>
               </li>
