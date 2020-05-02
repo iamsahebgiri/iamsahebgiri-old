@@ -19,6 +19,9 @@
       height: 16px;
       fill: $secondary-color;
     }
+    a {
+      height: 16px;
+    }
   }
 
   div {
@@ -97,4 +100,16 @@
 @keyframes slide {
   from {left: -70%; opacity: 0;}
   to {left: 0; opacity: 1;}
+}
+
+.hamburger {
+  svg{
+    fill: $secondary-color;
+  }
+}
+
+.search {
+  svg {
+    fill: $secondary-color;
+  }
 }

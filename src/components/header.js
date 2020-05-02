@@ -5,9 +5,6 @@ import headerStyles from '../styles/header.module.scss'
 import siteLogo from '../assets/saheb-giri.svg'
 
 class Header extends Component {
-  constructor() {
-    super();
-  }
   modal = React.createRef();
 
   modalHandler(e) {

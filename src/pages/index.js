@@ -1,15 +1,43 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import globalStyles from '../styles/global.module.scss'
 import Layout from '../layouts/layout'
 
 import Card from '../components/card'
 
-export default () => (
+
+
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            excerpt
+            timeToRead
+            frontmatter {
+              title
+              date
+              author
+            }
+          }
+        }
+      }
+    }
+  `)
+
+
+  return (
     <Layout>
-        {/* <h1 className={globalStyles.text}>
-            Home Page
-        </h1> */}
-        <Card />
+      {
+        data.allMarkdownRemark.edges.map(item => {
+          return (
+            <Card title={item.node.frontmatter.title} desc={item.node.excerpt} author={item.node.frontmatter.author} date={item.node.frontmatter.date} readTime={item.node.timeToRead} />
+          )
+        })
+      }
+
     </Layout>
-)
+  )
+}
+export default IndexPage;
