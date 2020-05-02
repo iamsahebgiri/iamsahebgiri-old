@@ -2,23 +2,121 @@
 
 .article {
   background-color: $white-color;
-  padding: 0 1rem 1rem 1.5rem ;
-  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: $box-shadow;
 
-  h1 {
-    margin: 0;
+  .meta-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // padding: 1rem 0;
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      color: $subtle-grey-color;
+      font-size: 14px;
+
+      svg {
+        fill: $subtle-grey-color;
+        height: 1rem;
+      }
+    }
+  }
+  .toc {
+    ul {
+      list-style-type: none;
+      padding-left: 0.5rem;
+      li {
+        line-height: 27px;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: lighten($color: $primary-color, $amount: 10);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .toc-hr {
+    height: 1px;
+    background-color: $link-hover-color;
+    border: none;
   }
 
   .md-body {
     line-height: 27px;
-
+    margin-left: 0.5rem;
 
     a {
       color: $primary-color;
       text-decoration: none;
     }
-    h1 {
-      font-size: 24px;
+
+    a:hover {
+      color: lighten($color: $primary-color, $amount: 10);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      box-shadow: $box-shadow;
+      border-radius: 2px;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      text-align: left;
+      background-color: $link-hover-color;
+    }
+
+    hr {
+      height: 1px;
+      background-color: $link-hover-color;
+      border: none;
+    }
+
+    blockquote {
+      background: #deebff;
+      margin: 0;
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+
+      p:first-child {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $primary-color;
+        margin: 0.5rem 0;
+      }
+      p:nth-child(2){
+        margin-top:0;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react'
 
 import globalStyles from '../styles/global.module.scss'
+import { Link } from 'gatsby'
 
-const Card = ({ title, desc, author, date, readTime }) => {
+const Card = ({ title, desc, author, date, readTime, slug }) => {
   return (
     <div className={globalStyles.card}>
       <div className={globalStyles.cardTitle}>
         <h1>
-          {title}
+          <Link to={`/blog/${slug}`}> {title}</Link>
         </h1>
       </div>
       <div className={globalStyles.cardDesc}>
