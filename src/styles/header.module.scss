@@ -4,14 +4,27 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
 
   background: $white-color;
   padding: 0.8rem;
   box-shadow: $box-shadow;
 
+
+  .main-site-logo {
+    display: flex;
+    align-items: center;
+
+    svg{
+      height: 16px;
+    }
+  }
+
+  div {
+    height: 24px;
+  }
   a {
     text-decoration: none;
-    color: $secondary-color;
   }
 }
 
@@ -22,8 +35,10 @@
   top: 0;
   left: 0;
   background: $modal-background-color;
+  display: none;
 }
 .mobile-nav-menu {
+  position: relative;
   background: $white-color;
   width: 70%;
   height: 100%;
@@ -73,4 +88,12 @@
       }
     }
   }
+
+  animation-name: slide;
+  animation-duration: 0.4s;
+}
+
+@keyframes slide {
+  from {left: -70%; opacity: 0;}
+  to {left: 0; opacity: 1;}
 }
