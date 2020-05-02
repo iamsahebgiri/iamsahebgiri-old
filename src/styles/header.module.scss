@@ -10,7 +10,6 @@
   padding: 0.8rem;
   box-shadow: $box-shadow;
 
-
   .main-site-logo {
     display: flex;
     align-items: center;
@@ -40,6 +39,7 @@
   left: 0;
   background: $modal-background-color;
   display: none;
+  z-index: 90;
 }
 .mobile-nav-menu {
   position: relative;

@@ -2,10 +2,23 @@
 
 .article {
   background-color: $white-color;
-  box-shadow: $box-shadow;
-  padding:1rem;
+  padding: 0 1rem 1rem 1.5rem ;
+  margin-top: 1rem;
 
   h1 {
     margin: 0;
+  }
+
+  .md-body {
+    line-height: 27px;
+
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 24px;
+    }
   }
 }

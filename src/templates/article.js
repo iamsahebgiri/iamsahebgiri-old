@@ -33,7 +33,7 @@ const Article = (props) => {
 
         </div>
 
-        <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}>
+        <div className={articleStyles.mdBody} dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}>
 
         </div>
       </div>
