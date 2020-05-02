@@ -14,13 +14,12 @@
     display: flex;
     align-items: center;
 
-    svg{
-      height: 16px;
-      fill: $secondary-color;
-    }
     a {
       height: 16px;
       color: $secondary-color;
+    }
+    img {
+      height: 1rem;
     }
   }
 

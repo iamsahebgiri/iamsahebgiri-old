@@ -13,11 +13,37 @@ It works on server- client model, which means there is a server and a client sta
 
 ## How to install adb?
 
-```sh
+1. Visit the link given below and download the platform tools and install it in you PC. 
+   [Android Developer Site](https://developer.android.com/studio/releases/platform-tools)
+2. Extract it in your folder and using console navigate to the  folder where you have extracted. For me this is what it looks like.
+3. Now turn on the developer mode and USB Debugging option in your android phone. Connect your android device to your PC. 
+
+## Install apps in your phone
+
+```bash
+./adb install path_to_apk
+```
+
+## Full access of your phone 
+
+```bash
 ./adb shell
 ```
-> Note
-> 
-> Well that might work
 
-![alt text](https://images.unsplash.com/photo-1552068751-34cb5cf055b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80 "Logo Title")
+## Take screenshot using console
+
+```bash
+> ./adb shell
+> screencap /sdcard/screen.png
+> exit
+> ./adb pull /sdcard/screen.png
+```
+
+## Record you phone screen as video
+Press Control + C to stop recording
+```bash 
+> ./adb shell
+> screenrecord /sdcard/video.mp4
+> exit
+> ./adb pull /sdcard/video.mp
+```
