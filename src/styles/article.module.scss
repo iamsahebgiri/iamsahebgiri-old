@@ -1,1 +1,11 @@
 @import "./variables.scss";
+
+.article {
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  padding:1rem;
+
+  h1 {
+    margin: 0;
+  }
+}
