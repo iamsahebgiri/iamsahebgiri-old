@@ -21,6 +21,7 @@ const IndexPage = () => {
               title
               date
               author
+              tags
             }
           }
         }
@@ -34,7 +35,7 @@ const IndexPage = () => {
       {
         data.allMarkdownRemark.edges.map(item => {
           return (
-            <Card key={item.node.id} slug={item.node.frontmatter.id} title={item.node.frontmatter.title} desc={item.node.excerpt} author={item.node.frontmatter.author} date={item.node.frontmatter.date} readTime={item.node.timeToRead} />
+            <Card key={item.node.id} tags={item.node.frontmatter.tags} slug={item.node.frontmatter.id} title={item.node.frontmatter.title} desc={item.node.excerpt} author={item.node.frontmatter.author} date={item.node.frontmatter.date} readTime={item.node.timeToRead} />
           )
         })
       }

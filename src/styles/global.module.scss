@@ -14,7 +14,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  width: 100%;
 }
 
 .card {
@@ -22,20 +22,29 @@ a {
   background: $white-color;
   box-shadow: $box-shadow;
   border-radius: 2px;
-  margin-top: 1rem;
+  margin-bottom: .5rem;
+
+  .card-tags span {
+    display: inline-block;
+    background: #deebff;
+    color: $primary-color;
+    padding: 2px 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    border-radius: 13px;
+  }
 }
 
 .card-title {
   h1 {
     font-size: 28px;
     margin: 0 0 0.5rem 0;
-    
+
     a {
       color: $secondary-color;
     }
-    
   }
-
 }
 
 .card-footer {

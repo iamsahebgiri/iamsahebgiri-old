@@ -3,9 +3,23 @@ import React from 'react'
 import globalStyles from '../styles/global.module.scss'
 import { Link } from 'gatsby'
 
-const Card = ({ title, desc, author, date, readTime, slug }) => {
+const Card = ({ title, desc, author, date, readTime, slug, tags }) => {
+  tags.forEach(tag => {
+    console.log(tag);
+    
+  });
+  
   return (
     <div className={globalStyles.card}>
+      <div className={globalStyles.cardTags}>
+        {tags.map(tag => {
+         return (
+           <Link to={`/tags/${tag.toLowerCase()}`}>
+           <span>{tag}</span>
+           </Link>
+         )
+        })}
+      </div>
       <div className={globalStyles.cardTitle}>
         <h1>
           <Link to={`/blog/${slug}`}> {title}</Link>

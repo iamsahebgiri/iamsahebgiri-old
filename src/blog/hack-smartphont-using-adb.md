@@ -3,6 +3,7 @@ id: hack-smartphont-using-adb
 title: Hack smartphone using adb
 author: Saheb Giri
 date: 20 May 2020
+tags: ["android", "hack",]
 ---
 
 ADB stands for Android Debug Bridge. The name itself self explanatory. It allows us to connect to android devices. ADB helps in do all the thing that you do in your phone. This is primarily developed for android app developer. Enough of introduction, so let's make your hands dirty.

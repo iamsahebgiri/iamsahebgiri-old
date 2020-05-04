@@ -1,0 +1,27 @@
+@import "./variables";
+
+.all-tags {
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  padding: 1rem;
+  
+
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li{
+      display: inline-block;
+      background: #deebff;
+      padding: 2px 1rem;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      border-radius: 13px;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -2,9 +2,12 @@
 
 .article {
   background-color: $white-color;
-  padding: 1rem;
+  padding:1rem 1rem 3rem 1rem;
   box-shadow: $box-shadow;
 
+  .title h1{
+    margin-top: 0;
+  }
   .meta-data {
     display: flex;
     justify-content: space-between;
@@ -110,8 +113,8 @@
         color: $primary-color;
         margin: 0.5rem 0;
       }
-      p:nth-child(2){
-        margin-top:0;
+      p:nth-child(2) {
+        margin-top: 0;
       }
     }
 
