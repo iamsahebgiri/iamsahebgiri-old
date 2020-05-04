@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import headerStyles from '../styles/header.module.scss'
 import siteLogo from '../assets/saheb-giri.svg'
+import NProgress from"../../node_modules/nprogress"
 
 class Header extends Component {
   modal = React.createRef();
@@ -17,6 +18,10 @@ class Header extends Component {
     this.modal.current.style.display = "block";
   }
 
+  componentDidMount() {
+    NProgress.start();
+    NProgress.done();
+  }
   render() {
     return (
       <header className={headerStyles.header}>

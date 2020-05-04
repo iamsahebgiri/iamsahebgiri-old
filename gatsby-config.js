@@ -3,6 +3,13 @@ module.exports = {
     title: `Saheb Giri's Personal Blog`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+          color: `#0052CC`,
+          showSpinner: false
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
