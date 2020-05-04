@@ -4,6 +4,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../layouts/layout"
 
+// Styles
+import globalStyles from "../styles/global.module.scss"
+
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
@@ -13,8 +16,9 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <div className={globalStyles.whiteContainer}>
       <h1>{tagHeader}</h1>
-      <ul>
+      <ul className={globalStyles.ulTags}>
         {edges.map(({ node }) => {
           const { id, title } = node.frontmatter
           return (
@@ -28,7 +32,8 @@ const Tags = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
+      <Link className={globalStyles.back} to="/tags">All tags</Link>
+      </div>
     </Layout>
   )
 }

@@ -22,7 +22,7 @@ a {
   background: $white-color;
   box-shadow: $box-shadow;
   border-radius: 2px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
   .card-tags span {
     display: inline-block;
@@ -69,4 +69,18 @@ a {
   color: $subtle-grey-color;
   text-align: center;
   padding: 2rem 0;
+}
+
+.white-container {
+  background: $white-color;
+  box-shadow: $box-shadow;
+  padding: 1rem;
+}
+
+.ul-tags {
+  list-style-type: none;
+  padding: 0;
+  li a {
+    color: $primary-color;  
+  }
 }

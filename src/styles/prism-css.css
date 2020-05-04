@@ -193,3 +193,21 @@ pre .line-highlight[data-end]:after,
 pre > code.line-highlight[data-end]:after {
 	content: '';
 }
+
+
+div[data-language]:not([data-language=""]) {
+	display: flex;
+	flex-direction: column;
+}
+div[data-language]:not([data-language=""]):before {
+	font-weight: 600;
+	content: attr(data-language);
+	color: #ff9d00;
+	position: relative;
+	top: 2rem;
+	right: 0.5rem;
+	font-size: 0.5rem;
+	text-align: right;
+	text-transform: uppercase;
+	margin-top: -2rem;
+}

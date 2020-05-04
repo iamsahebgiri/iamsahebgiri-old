@@ -4,17 +4,13 @@ import globalStyles from '../styles/global.module.scss'
 import { Link } from 'gatsby'
 
 const Card = ({ title, desc, author, date, readTime, slug, tags }) => {
-  tags.forEach(tag => {
-    console.log(tag);
-    
-  });
   
   return (
     <div className={globalStyles.card}>
       <div className={globalStyles.cardTags}>
         {tags.map(tag => {
          return (
-           <Link to={`/tags/${tag.toLowerCase()}`}>
+           <Link key={tag} to={`/tags/${tag.toLowerCase()}`}>
            <span>{tag}</span>
            </Link>
          )
