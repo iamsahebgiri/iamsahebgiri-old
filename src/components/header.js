@@ -3,9 +3,13 @@ import { Link } from 'gatsby'
 
 import headerStyles from '../styles/header.module.scss'
 import siteLogo from '../assets/saheb-giri.svg'
-import NProgress from"../../node_modules/nprogress"
+import NProgress from "../../node_modules/nprogress"
 
 class Header extends Component {
+  constructor() {
+    super();
+    NProgress.start();
+  }
   modal = React.createRef();
 
   modalHandler(e) {
@@ -19,9 +23,10 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    NProgress.start();
+    
     NProgress.done();
   }
+
   render() {
     return (
       <header className={headerStyles.header}>
@@ -36,7 +41,9 @@ class Header extends Component {
           </div>
 
           <div className={headerStyles.search}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" /></svg>
+            <Link to="/about/">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6.023 15.416C7.491 17.606 9.695 19 12.16 19c2.464 0 4.669-1.393 6.136-3.584A8.968 8.968 0 0 0 12.16 13a8.968 8.968 0 0 0-6.137 2.416zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+            </Link>
           </div>
         </div>
 
@@ -67,7 +74,7 @@ class Header extends Component {
               </li>
               <li>
                 <Link to="/tags" activeClassName={headerStyles.menuItemActive} replace>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 2h14a1 1 0 0 1 1 1v19.143a.5.5 0 0 1-.766.424L12 18.03l-7.234 4.536A.5.5 0 0 1 4 22.143V3a1 1 0 0 1 1-1zm3 7v2h8V9H8z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M5 2h14a1 1 0 0 1 1 1v19.143a.5.5 0 0 1-.766.424L12 18.03l-7.234 4.536A.5.5 0 0 1 4 22.143V3a1 1 0 0 1 1-1zm3 7v2h8V9H8z" /></svg>
                   Tags
                 </Link>
               </li>
