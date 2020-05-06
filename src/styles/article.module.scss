@@ -28,7 +28,7 @@
     }
   }
   .toc-title {
-    margin: 2rem 0 0 0 ;
+    margin: 2rem 0 0 0;
   }
   .toc {
     ul {
@@ -60,6 +60,11 @@
   .md-body {
     line-height: 27px;
     margin-left: 0.5rem;
+
+    h2 {
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $link-hover-color;
+    }
 
     a {
       color: $primary-color;
@@ -128,6 +133,71 @@
 
     ol {
       padding-left: 1rem;
+    }
+  }
+}
+
+// desktop
+
+@media only screen and (min-width: 1200px) {
+  .article-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .article-sidepane {
+    margin-left: 1rem;
+
+    .toc {
+      ul {
+        margin-top: 0.5rem;
+        list-style-type: none;
+        padding-left: 0.5rem;
+        li {
+          line-height: 27px;
+
+          a {
+            color: $primary-color;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: lighten($color: $primary-color, $amount: 10);
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .desktop-toc {
+    padding: 2rem;
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+
+    ul {
+      list-style: none;
+      padding: 0.5rem;
+    }
+  }
+  .article {
+    padding: 2.5rem;
+    max-width: 700px;
+
+    .meta-data {
+      justify-content: normal;
+
+      .meta-item {
+        margin-right: 1rem;
+      }
+    }
+    .toc {
+      display: none;
+    }
+    .toc-title {
+      display: none;
+    }
+    .toc-hr {
+      display: none;
     }
   }
 }
