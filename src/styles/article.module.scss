@@ -137,6 +137,10 @@
   }
 }
 
+.article-sidepane {
+  display: none;
+}
+
 // desktop
 
 @media only screen and (min-width: 1200px) {
@@ -145,6 +149,7 @@
     flex-direction: row;
   }
   .article-sidepane {
+    display: block;
     margin-left: 1rem;
 
     .toc {
@@ -170,6 +175,7 @@
     }
   }
   .desktop-toc {
+    display: block;
     padding: 2rem;
     background-color: $white-color;
     box-shadow: $box-shadow;

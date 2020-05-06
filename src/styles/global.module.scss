@@ -86,7 +86,7 @@ a {
     align-items: center;
     background: $white-color;
     box-shadow: $box-shadow;
-    padding: 2rem 3rem;
+    padding: 2rem;
     border-radius: 2px;
 
     h2 {
@@ -113,6 +113,10 @@ a {
 
         h1 {
           margin: 0;
+        }
+
+        span {
+          color: #97A0AF;
         }
       }
     }
