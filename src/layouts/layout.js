@@ -9,9 +9,9 @@ const Layout = (props) => (
     <main className={globalStyles.container}> 
       {props.children}
     </main>
-    <div className={globalStyles.footer}>
+    <footer className={globalStyles.footer}>
       Made with ❤ by Saheb Giri, &copy; 2020
-    </div>
+    </footer>
   </div>
 )
 

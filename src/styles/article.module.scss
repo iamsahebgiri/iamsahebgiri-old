@@ -27,8 +27,12 @@
       }
     }
   }
+  .toc-title {
+    margin: 2rem 0 0 0 ;
+  }
   .toc {
     ul {
+      margin-top: 0.5rem;
       list-style-type: none;
       padding-left: 0.5rem;
       li {

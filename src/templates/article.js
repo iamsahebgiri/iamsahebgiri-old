@@ -42,7 +42,7 @@ const Article = (props) => {
         </div>
         </div>
 
-        <h2> Table of Contents </h2>
+        <h2 className={articleStyles.tocTitle}> Table of Contents </h2>
         <div className={articleStyles.toc} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.tableOfContents }}>
         </div>
         <hr className={articleStyles.tocHr} />
