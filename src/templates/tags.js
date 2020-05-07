@@ -16,7 +16,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <div className={globalStyles.whiteContainer}>
+      <div className={globalStyles.whiteContainer} style={{width: "100%"}}>
       <h1>{tagHeader}</h1>
       <ul className={globalStyles.ulTags}>
         {edges.map(({ node }) => {

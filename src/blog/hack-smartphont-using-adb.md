@@ -1,6 +1,6 @@
 ---
 id: hack-smartphont-using-adb
-title: Hack smartphone using adb
+title: Hack Smartphone using ADB
 author: Saheb Giri
 date: 20 May 2020
 tags: ["android", "hack",]

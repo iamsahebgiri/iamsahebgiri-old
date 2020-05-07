@@ -67,13 +67,12 @@
     }
 
     a {
-      color: $primary-color;
+      color: $secondary-color;
       text-decoration: none;
     }
 
     a:hover {
-      color: lighten($color: $primary-color, $amount: 10);
-      text-decoration: underline;
+      color: $primary-color;
       cursor: pointer;
     }
 
@@ -161,13 +160,12 @@
           line-height: 27px;
 
           a {
-            color: $primary-color;
+            color: $secondary-color;
             text-decoration: none;
           }
 
           a:hover {
-            color: lighten($color: $primary-color, $amount: 10);
-            text-decoration: underline;
+            color: $primary-color;
             cursor: pointer;
           }
         }

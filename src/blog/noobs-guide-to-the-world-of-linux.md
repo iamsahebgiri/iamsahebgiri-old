@@ -1,6 +1,6 @@
 ---
 id: noobs-guide-to-the-world-of-linux
-title: Noobs guide to the world of linux
+title: Getting Started with Linux 
 author: Saheb Giri
 date: 05 May 2020
 tags: ["linux", "guide"]
