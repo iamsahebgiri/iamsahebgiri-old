@@ -2,7 +2,7 @@
 id: noobs-guide-to-the-world-of-linux
 title: Getting Started with Linux 
 author: Saheb Giri
-date: 05 May 2020
+date: 05-05-2020
 tags: ["linux", "guide"]
 ---
 Linux had been the operating system for geeks and hacker. And it's true that there are other distribution like Ubuntu, Linuxmint, zorin os, meant for the people who want to give it a try. In this Linux 101 blog I will basically walk you through all the technical terms that you will come across while using Linux. 

@@ -2,7 +2,7 @@
 id: things-you-dont-know-as-a-javascript-developer
 title: Things you don't know as a javascript developer
 author: Saheb Giri
-date: 05 May 2020
+date: 05-4-2020
 tags: ["javascript", "TIL"]
 ---
 ## Currying in functioal programming 

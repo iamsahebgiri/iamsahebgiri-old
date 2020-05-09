@@ -7,7 +7,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const tagTemplate = path.resolve(`./src/templates/tags.js`);
   const res = await graphql(`
   query {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           frontmatter {
