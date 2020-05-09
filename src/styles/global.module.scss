@@ -1,14 +1,14 @@
 @import "./variables";
 
-@font-face {
-  font-family: "Proxima Nova Regular";
-  src: url("../assets/ProximaNova-Regular.ttf");
-}
+// @font-face {
+//   font-family: "Proxima Nova Regular";
+//   src: url("../assets/ProximaNova-Regular.ttf");
+// }
 
-@font-face {
-  font-family: "Proxima Nova Semibold";
-  src: url("../assets/ProximaNova-Semibold.ttf");
-}
+// @font-face {
+//   font-family: "Proxima Nova Semibold";
+//   src: url("../assets/ProximaNova-Semibold.ttf");
+// }
 
 body {
   font-family: $font-family;
@@ -46,7 +46,7 @@ a {
   h1 {
     font-size: 28px;
     margin: 0 0 0.5rem 0;
-    font-weight: 600;
+    // font-weight: 600;
 
     a {
       color: $secondary-color;
@@ -101,7 +101,7 @@ a {
   }
 
   th {
-    font-weight: 600;
+    // font-weight: 600;
     text-transform: uppercase;
     border: none;
     text-align: left;
