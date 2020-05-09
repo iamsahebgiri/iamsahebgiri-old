@@ -6,10 +6,7 @@ import siteLogo from '../assets/saheb-giri.svg'
 import NProgress from "nprogress"
 
 class Header extends Component {
-  constructor() {
-    super();
-    
-  }
+  
   modal = React.createRef();
 
   modalHandler(e) {
