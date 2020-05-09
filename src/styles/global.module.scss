@@ -1,5 +1,15 @@
 @import "./variables";
 
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../assets/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../assets/ProximaNova-Semibold.ttf");
+}
+
 body {
   font-family: $font-family;
   background-color: $background-color;
@@ -11,10 +21,11 @@ body {
 
 a {
   text-decoration: none;
+  color: $secondary-color;
 }
 
 .card {
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1.5rem;
   background: $white-color;
   box-shadow: $box-shadow;
   margin-bottom: 2rem;
@@ -35,6 +46,7 @@ a {
   h1 {
     font-size: 28px;
     margin: 0 0 0.5rem 0;
+    font-weight: 600;
 
     a {
       color: $secondary-color;
@@ -69,7 +81,7 @@ a {
 .white-container {
   background: $white-color;
   box-shadow: $box-shadow;
-  padding: 1rem;
+  padding: 1.5rem;
 
   table {
     width: 100%;
@@ -121,6 +133,7 @@ a {
     border-radius: 2px;
 
     h2 {
+      // font-weight: 600;
       margin: 0.5rem 0 0 0;
     }
     p {
@@ -144,6 +157,7 @@ a {
 
         h1 {
           margin: 0;
+          // font-weight: 600;
         }
 
         span {

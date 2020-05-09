@@ -7,6 +7,7 @@ import Card from '../components/card'
 
 import globalStyles from '../styles/global.module.scss'
 import sahebgiri from "../assets/saheb-giri.png"
+import Head from "../components/head"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Head title="Home" />
       <div>
         {
           data.allMarkdownRemark.edges.map(item => {

@@ -1,8 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Saheb Giri's Personal Blog`
+    title: `Saheb Giri's Personal Blog`,
+    siteUrl: `https://iamsahebgiri.now.sh`,
+    description: `Personal blog where I share stuff that I have learnt over time.`,
   },
   plugins: [
+    // `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Saheb Giri`,
+        short_name: `Saheb Giri`,
+        start_url: `/`,
+        background_color: `#F4F6F7`,
+        theme_color: `#0052CC`,
+        display: `standalone`,
+        icon: `src/assets/icon.png`
+      },
+    },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

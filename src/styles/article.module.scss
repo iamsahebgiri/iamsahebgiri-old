@@ -76,31 +76,30 @@
       cursor: pointer;
     }
 
-    table {
-      width: 100%;
-      box-shadow: $box-shadow;
-      border-radius: 2px;
-    }
+    div {
+      overflow-x: auto;
 
-    table,
-    th,
-    td {
-      border-collapse: collapse;
-    }
-    th,
-    td {
-      padding: 0.5rem;
-      text-align: left;
-    }
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid $link-hover-color;
+      }
 
-    th {
-      font-weight: 600;
-      text-transform: uppercase;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      padding-left: 12px;
-      text-align: left;
-      background-color: $link-hover-color;
+      th {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        text-align: left;
+        background-color: $link-hover-color;
+      }
     }
 
     hr {
@@ -174,7 +173,7 @@
   }
   .desktop-toc {
     display: block;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: $white-color;
     box-shadow: $box-shadow;
 

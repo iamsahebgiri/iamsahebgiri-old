@@ -2,10 +2,12 @@ import React from 'react'
 import Layout from '../layouts/layout'
 
 import globalStyles from "../styles/global.module.scss"
+import Head from '../components/head'
 
 export default () => {
   return (
     <Layout>
+      <Head title="About" />
       <div className={globalStyles.whiteContainer}>
         <h1>About Me</h1>
         <p>I am an 18 years old indie developer or you may call entreprenerd. I am passionate about technology, business and startup. </p>

@@ -9,6 +9,8 @@ import Layout from "../layouts/layout"
 
 //Styles
 import tagsStyle from "../styles/tags.module.scss"
+import globalStyles from "../styles/global.module.scss"
+import Head from "../components/head"
 
 const TagsPage = ({
   data: {
@@ -19,6 +21,7 @@ const TagsPage = ({
   },
 }) => (
     <Layout>
+      <Head title="Tags" />
       <div className={tagsStyle.allTags}>
         <h1>All Tags</h1>
         <ul>
@@ -30,6 +33,8 @@ const TagsPage = ({
             </li>
           ))}
         </ul>
+
+        <Link to="/" className={globalStyles.back}>Go to home</Link>
       </div>
     </Layout>
   )
