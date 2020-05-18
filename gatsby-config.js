@@ -13,7 +13,7 @@ module.exports = {
         short_name: `Saheb Giri`,
         start_url: `/`,
         background_color: `#F4F6F7`,
-        theme_color: `#0052CC`,
+        theme_color: `#FFFFFF`,
         display: `standalone`,
         icon: `src/assets/icon.svg`
       },
