@@ -61,9 +61,9 @@ The above function is pure because the return value is never going to change as 
 
 
 
-## Higer order function 
+## Higher order function 
 
-The function which takes another function as argument is called Higer order function. Eg. map(), filter() , setTimeout(), etc. 
+The function which takes another function as argument is called Higher order function. Eg. map(), filter() , setTimeout(), etc. 
 
 ```js 
 const numbers = [65, 44, 12, 4];

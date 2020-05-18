@@ -1,6 +1,6 @@
 ---
 id: cpp-stl-in-nutshell
-title: C++ STL in nutshell
+title: Everything you need to know about C++ STL
 author: Saheb Giri
 date: 09-05-2020
 tags: ["cpp", "STL", "vector", "TIL"]
