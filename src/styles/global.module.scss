@@ -27,16 +27,14 @@ a {
     padding: 2px 1rem;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
-    // font-weight: 600;
     border-radius: 13px;
   }
 }
 
 .card-title {
   h1 {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 0 0.5rem 0;
-    // font-weight: 600;
 
     a {
       color: $secondary-color;
@@ -91,8 +89,7 @@ a {
   }
 
   th {
-    // font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 500;
     border: none;
     text-align: left;
     background-color: $link-hover-color;
@@ -123,7 +120,6 @@ a {
     border-radius: 2px;
 
     h2 {
-      // font-weight: 600;
       font-size: 20px;
       margin: 0.5rem 0 0 0;
     }
@@ -195,7 +191,7 @@ a {
 
   .card-title {
     h1 {
-      font-size: 22px;
+      font-size: 28px;
     }
   }
 

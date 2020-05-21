@@ -20,7 +20,7 @@ export default () => {
               <tr>
                 <th>Project</th>
                 <th>Started</th>
-                <th>Description</th>
+                {/* <th>Description</th> */}
                 <th>Status</th>
                 <th>Tech Stack</th>
               </tr>
@@ -30,11 +30,9 @@ export default () => {
               <tr>
                 <td>Reload</td>
                 <td>Jan 2020</td>
-                <td>
-                  <p>
+                {/* <td>
                     I build Reload using Kotlin and it integrates 5 APIs all together which provide daily quotes, trivia, memes, and many more. It took me 2 days to build because I had no idea how Kotlin works.
-                </p>
-                </td>
+                </td> */}
                 <td style={{ color: "#00875A" }}>Active</td>
                 <td>
                   Android Studio, Kotlin, Vollyball, Picasso,Open Source APIs, Figma
@@ -44,7 +42,7 @@ export default () => {
               <tr>
                 <td>Captain</td>
                 <td>April 2018</td>
-                <td>It was dual player tic tac toe game and you can play with AI as well.</td>
+                {/* <td>It was dual player tic tac toe game and you can play with AI as well.</td> */}
                 <td style={{ color: "#DE350B" }}>Dead</td>
                 <td>
                   Android Studio, Java
@@ -54,7 +52,7 @@ export default () => {
               <tr>
                 <td>Kalam</td>
                 <td>March 2020</td>
-                <td>Share writings and download them as png.</td>
+                {/* <td>Share writings and download them as png.</td> */}
                 <td style={{ color: "#FF991F" }}>Partially Active</td>
                 <td>
                   Express, Node, MongoDB, React, Adobe XD
@@ -64,7 +62,7 @@ export default () => {
               <tr>
                 <td>Refresh CSS</td>
                 <td>April 2020</td>
-                <td>A modern, responsive and clean looking CSS framework.</td>
+                {/* <td>A modern, responsive and clean looking CSS framework.</td> */}
                 <td style={{ color: "#FF991F" }}>Ongoing</td>
                 <td>
                   Express, Node, MongoDB, React, Adobe XD
@@ -74,7 +72,7 @@ export default () => {
               <tr>
                 <td>Spotify Client</td>
                 <td>March 2019</td>
-                <td></td>
+                {/* <td></td> */}
                 <td style={{ color: "#00875A" }}>Active</td>
                 <td>
                   Adobe Photoshop, Nuxt.js

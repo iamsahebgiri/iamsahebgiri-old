@@ -93,8 +93,8 @@
       }
 
       th {
-        // font-weight: 600;
-        text-transform: uppercase;
+        font-weight: 500;
+        // text-transform: uppercase;
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 12px;
@@ -143,6 +143,9 @@
 // desktop
 
 @media only screen and (min-width: 1200px) {
+  table {
+    width: 100%;
+  }
   .article-container {
     display: flex;
     flex-direction: row;
