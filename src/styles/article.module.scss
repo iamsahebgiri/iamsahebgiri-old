@@ -149,6 +149,9 @@
   .article-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .article-sidepane {
     display: block;
@@ -175,20 +178,9 @@
       }
     }
   }
-  .desktop-toc {
-    display: block;
-    padding: 1.5rem;
-    background-color: $white-color;
-    box-shadow: $box-shadow;
-
-    ul {
-      list-style: none;
-      padding: 0.5rem;
-    }
-  }
   .article {
-    padding: 2.5rem;
-    max-width: 700px;
+    padding: 0 0 3rem 0;
+    max-width: 768px;
 
     .meta-data {
       justify-content: normal;

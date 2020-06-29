@@ -9,7 +9,7 @@ export default () => {
    <Layout>
      <Head title="Resume" />
      <div className={globalStyles.whiteContainer} style={{ maxWidth: "100%"}}>
-      <h1>Resume Page</h1>
+      <h1>Resume</h1>
       <p>
         You know what may be some days later.. <span role="img" aria-labelledby="happy">😊😊</span>
       </p>

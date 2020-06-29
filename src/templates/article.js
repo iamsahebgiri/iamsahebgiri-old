@@ -43,21 +43,21 @@ const Article = (props) => {
         </div>
           </div>
 
-          <h2 className={articleStyles.tocTitle}> Table of Contents </h2>
+          {/* <h2 className={articleStyles.tocTitle}> Table of Contents </h2>
           <div className={articleStyles.toc} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.tableOfContents }}>
-          </div>
+          </div> */}
           <hr className={articleStyles.tocHr} />
           <div className={articleStyles.mdBody} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
           </div>
         </div>
 
-        <div className={articleStyles.articleSidepane}>
+        {/* <div className={articleStyles.articleSidepane}>
           <div className={articleStyles.desktopToc}>
             <h2 className={articleStyles.tocTitle}> Table of Contents </h2>
             <div className={articleStyles.toc} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.tableOfContents }}>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
 

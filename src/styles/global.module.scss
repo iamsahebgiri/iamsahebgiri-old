@@ -69,32 +69,14 @@ a {
 .white-container {
   background: $white-color;
   box-shadow: $box-shadow;
-  padding: 1.5rem;
-
-  table {
-    width: 100%;
-    background-color: $white-color;
+  padding: 1rem;
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
   }
-
-  table,
-  th,
-  td {
-    border-collapse: collapse;
+  p {
+    line-height: 27px;
   }
-  th,
-  td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid $link-hover-color;
-  }
-
-  th {
-    font-weight: 500;
-    border: none;
-    text-align: left;
-    background-color: $link-hover-color;
-  }
-
   hr {
     height: 1px;
     background-color: $link-hover-color;
@@ -116,7 +98,7 @@ a {
     align-items: center;
     background: $white-color;
     box-shadow: $box-shadow;
-    padding: 2rem;
+    padding: 1.5rem 0;
     border-radius: 2px;
 
     h2 {
@@ -182,22 +164,32 @@ a {
 // desktop
 
 @media only screen and (min-width: 1200px) {
+  body {
+    background: #fff;
+  }
+  .cards-container {
+    margin: 0 auto;
+  }
   .container {
     display: flex;
     justify-content: space-between;
     margin: 2rem auto;
-    max-width: 1100px;
+    max-width: 768px;
   }
-
   .card-title {
     h1 {
       font-size: 28px;
     }
   }
+  .white-container {
+    width: 768px;
+    padding: 0 0 3rem 0;
+  }
 
   .card {
+    padding: 1.5rem 0;
     border-radius: 2px;
-    max-width: 700px;
+    max-width: 768px;
   }
   .card-footer {
     justify-content: left;

@@ -3,25 +3,35 @@
 .all-tags {
   background-color: $white-color;
   box-shadow: $box-shadow;
-  padding: 1.5rem;
-  
+  padding: 1rem 1rem 3rem 1rem;
+
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
+  }
 
   ul {
     list-style: none;
     padding: 0;
-    
-    li{
+
+    li {
       display: inline-block;
       background: #deebff;
-      padding: 2px 1rem;
+      padding: 5px 1rem;
       margin-right: 1rem;
       margin-bottom: 0.5rem;
       font-weight: 500;
-      border-radius: 13px;
+      border-radius: 30px;
 
       a {
         color: $primary-color;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .all-tags {
+    padding: 0 0 3rem 0;
   }
 }

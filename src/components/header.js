@@ -79,7 +79,7 @@ class Header extends Component {
           </nav>
         </div>
 
-        <div className={headerStyles.modal} ref={this.modal} onClick={this.modalHandler.bind(this)}>
+        <div className={headerStyles.modal} role="button" tabIndex="0" ref={this.modal} onClick={this.modalHandler.bind(this)}>
           <nav className={headerStyles.mobileNavMenu} id="target">
             <Link to="/" className={headerStyles.siteLogo}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg>
