@@ -2,10 +2,10 @@
 
 #### I'm a B.Tech CSE Student.
 
-- ⚙️ I use daily: `.js`, `.py`, `.c`, `.kt`, `.java`, `.php`, `.sh`
+- ⚙️ I use daily: `.js`, `.py`, `.c`, `.cpp`, `.java`, `.php`, `.sh`
 - 🌍 I'm mostly active on **Instagram**
 - 🌱 Learning all about **Compiler Design**
-- 💬 Ping me about **React**, **Django**, **Vue** & **CP**
+- 💬 Ping me about **React**, **Vue**, **Node**,  **Design**, **Django**, **App Development**, & **CP**
 - ⚡️ Hobbies: Photography, programming & music.
 
 
