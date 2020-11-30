@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-#### I'm a B.Tech CSE Student.
+#### I'm a B.Tech CS Student.
 
 - ⚙️ I use daily: `.js`, `.py`, `.c`, `.cpp`, `.java`, `.php`, `.sh`
 - 🌍 I'm mostly active on **Instagram**
